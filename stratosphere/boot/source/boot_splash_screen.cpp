@@ -23,7 +23,7 @@ namespace ams::boot {
 
 /* Include splash screen into anonymous namespace. */
 /* TODO: Compile-time switch for splash_screen_text.hpp? */
-#include "boot_splash_screen_notext.inc"
+#include "boot_splash_screen_neutos_logo.inc"
 
     }
 
@@ -36,8 +36,8 @@ namespace ams::boot {
         InitializeDisplay();
         {
             /* Splash screen is shown for 2 seconds. */
-            ShowDisplay(SplashScreenX, SplashScreenY, SplashScreenW, SplashScreenH, SplashScreen);
-            svcSleepThread(2'000'000'000ul);
+            //ShowDisplay(SplashScreenX, SplashScreenY, SplashScreenW, SplashScreenH, SplashScreen);
+            //svcSleepThread(2'000'000'000ul);
         }
         FinalizeDisplay();
     }

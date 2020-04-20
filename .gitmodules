@@ -1,0 +1,12 @@
+[submodule "hbmenu"]
+	path = hbmenu
+	url = https://github.com/switchbrew/nx-hbmenu.git
+	ignore = dirty
+[submodule "hbl"]
+	path = hbl
+	url = https://github.com/switchbrew/nx-hbloader.git
+	ignore = dirty
+[submodule "libnx"]
+	path = libnx
+	url = https://github.com/switchbrew/libnx.git
+	ignore = dirty

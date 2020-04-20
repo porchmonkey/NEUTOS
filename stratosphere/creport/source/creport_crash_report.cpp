@@ -301,7 +301,7 @@ namespace ams::creport {
     }
 
     void CrashReport::SaveToFile(ScopedFile &file) {
-        file.WriteFormat(u8"Atmosphère Crash Report (v1.5):\n");
+        file.WriteFormat(u8"NeutOS Crash Report (v1.5):\n");
         file.WriteFormat("Result:                          0x%X (2%03d-%04d)\n\n", this->result.GetValue(), this->result.GetModule(), this->result.GetDescription());
 
         /* Process Info. */

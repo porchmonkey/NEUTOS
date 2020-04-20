@@ -126,7 +126,7 @@ int main(int argc, char **argv)
     const auto hw_type = spl::GetHardwareType();
     if (hw_type != spl::HardwareType::Copper && hw_type != spl::HardwareType::Calcio) {
         /* Display splash screen for two seconds. */
-        boot::ShowSplashScreen();
+        //boot::ShowSplashScreen();
 
         /* Check that the battery has enough to boot. */
         boot::CheckBatteryCharge();

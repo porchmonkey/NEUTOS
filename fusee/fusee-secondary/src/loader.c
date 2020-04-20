@@ -152,9 +152,6 @@ static int loadlist_ini_handler(void *user, const char *section, const char *nam
             /* Read in entrypoint as a hex string. */
             sscanf(value, "%x", &x);
             loader_ctx->chainload_entrypoint = x;
-        } else if (strcmp(name, LOADER_CUSTOMSPLASH_KEY) == 0) {
-            strncpy(loader_ctx->custom_splash_path, value, LOADER_MAX_PATH_SIZE);
-            loader_ctx->custom_splash_path[LOADER_MAX_PATH_SIZE] = '\0';
         } else if (strcmp(name, LOADER_PACKAGE2_KEY) == 0) {
             strncpy(loader_ctx->package2_path, value, LOADER_MAX_PATH_SIZE);
             loader_ctx->package2_path[LOADER_MAX_PATH_SIZE] = '\0';
