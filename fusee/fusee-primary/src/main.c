@@ -40,7 +40,7 @@ static char g_bct0_buffer[BCTO_MAX_SIZE];
 #define DEFAULT_BCT0 \
 "BCT0\n"\
 "[stage1]\n"\
-"stage2_path = atmosphere/fusee-secondary.bin\n"\
+"stage2_path = sept/payload.bin\n"\
 "stage2_mtc_path = atmosphere/fusee-mtc.bin\n"\
 "stage2_addr = 0xF0000000\n"\
 "stage2_entrypoint = 0xF0000000\n"\

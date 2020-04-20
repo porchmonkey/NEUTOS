@@ -20,13 +20,6 @@ debugmode_user = 0
 ; To force-disable nogc, add nogc = 0
 ```
 
-## Adding a Custom Boot Splashscreen
-Add the following lines to BCT.ini and change the value of `custom_splash` to the actual path and filename of your boot splashscreen.
-```
-[stage2]
-custom_splash = /path/to/your/bootlogo.bmp
-```
-
 The boot splashscreen must be a BMP file, it must be 720x1280 (1280x720 rotated 90 degrees left/counterclockwise/anti-clockwise) resolution, and be in 32-bit ARGB format. You can use image editing software such as GIMP or Photoshop to export the image in this format.
 
 ## Configuring "nogc" Protection
