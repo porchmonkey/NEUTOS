@@ -71,7 +71,7 @@ _crt0:
 /* Fusee-secondary header. */
 .align 5
 _metadata:
-.ascii "FSS0"
+.ascii ""
 .word __total_size__
 .word (_crt0 - _start)
 .word (_content_headers - _start)

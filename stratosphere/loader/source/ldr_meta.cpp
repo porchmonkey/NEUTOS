@@ -75,9 +75,9 @@ namespace ams::ldr {
             R_UNLESS(acid->magic == Acid::Magic, ResultInvalidMeta());
 
             /* Validate that the acid is for production if not development. */
-            if (!IsDevelopmentForAcidProductionCheck()) {
-                R_UNLESS((acid->flags & Acid::AcidFlag_Production) != 0, ResultInvalidMeta());
-            }
+            //if (!IsDevelopmentForAcidProductionCheck()) {
+            //    R_UNLESS((acid->flags & Acid::AcidFlag_Production) != 0, ResultInvalidMeta());
+            //}
 
             /* Validate Fac, Sac, Kac. */
             R_TRY(ValidateSubregion(sizeof(Acid), size, acid->fac_offset, acid->fac_size));
@@ -111,7 +111,7 @@ namespace ams::ldr {
 
         Result ValidateAcidSignature(Meta *meta) {
             /* Loader did not check signatures prior to 10.0.0. */
-            if (hos::GetVersion() < hos::Version_10_0_0) {
+            {
                 meta->is_signed = false;
                 return ResultSuccess();
             }
